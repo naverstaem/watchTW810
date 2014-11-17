@@ -1965,6 +1965,22 @@ header .header__form .form__block .block__form .button--form { vertical-align: t
 .about .about__img img.i2 { max-width: 325px; }
 .about .about__img img.i3 { max-width: 335px; }
 
+.features { background: url(../img/features_bg.jpg); background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; padding: 70px 0; }
+.features .item { text-align: center; color: #333; margin-top: 50px; }
+.features .item .item__img { text-align: center; }
+.features .item .item__img img { width: 167px; height: 118px; }
+.features .item h3 { font-size: 20px; font-family: "uni_sanssemibold"; }
+.features .item p { font-size: 16.4px; font-family: "uni_sans_regularregular"; }
+
+.specs { padding: 80px 0; }
+.specs h2 { text-align: left; }
+.specs table tbody tr:nth-child(odd) { background: url(../img/table_bg.png) repeat; }
+.specs table tr td { border: none; }
+.specs table tr th { width: 35%; border: none; }
+.specs .specs__img { text-align: center; width: 100%; max-width: 350px; }
+.specs ul { font-size: 18px; color: #333; font-family: "uni_sans_regularregular"; }
+.specs ul li { position: relative; }
+
 .testimony { background: url(../img/testimony_bg.png) no-repeat center center; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; padding-top: 70px; padding-bottom: 80px; text-align: center; position: relative; }
 .testimony h2 { color: #ffffff; font-size: 48px; margin: 0; letter-spacing: -1px; }
 .testimony .wave { display: inline-block; width: 140px; background: url(../img/wave2.png) center repeat-x; margin: 25px auto 0; height: 17px; }
