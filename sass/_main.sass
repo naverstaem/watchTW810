@@ -2,14 +2,14 @@
   border-bottom-width: 8px
   border-image-source: url(../img/stripe.png)
   border-image-repeat: repeat
-  border-image-slice: 0 0 8 0
+  border-image-slice: 0 1 8 1
 
 .navbar
   margin-bottom: 0
 
 .navbar-brand
   text-transform: uppercase
-  color: #000 !important
+  color: #45278b !important
   font-family: 'uni_sansheavy'
   font-size: 33px
   margin-top: 5px
@@ -76,14 +76,14 @@
 
 header
   padding-top: 60px
-  padding-bottom: 35px
+  padding-bottom: 25px
   background: url(../img/header_bg.jpg) center center no-repeat
   +cover
   overflow: hidden
   .top-b
     position: relative
     z-index: 1
-    +box-shadow(black 0 20px 20px -20px)
+    +box-shadow(#0f0f0f 0 20px 20px -20px)
     padding-bottom: 50px
     padding-left: 30px
     h1
@@ -114,7 +114,6 @@ header
 
   .header__form
 
-
     .form__block
       padding-right: 0
       padding-top: 25px
@@ -130,15 +129,19 @@ header
           font-size: 24px
           line-height: 1em
           color: #84b829
+          padding-left: 25px
 
           span
             font-size: 21px
             text-transform: none
             color: #ffffff
+        .counter
+          padding-left: 25px
         .block__price
           color: #ffffff
           font-family: 'uni_sansbold'
           margin-top: 20px
+          display: block
           .old
             font-size: 23px
             float: left
@@ -150,22 +153,23 @@ header
               text-transform: uppercase
               position: relative
               font-size: 29.5px
+              font-family: 'uni_sans_regularregular'
               &:before
                 position: absolute
                 content: ""
                 width: 10px
                 height: 0
-                border-bottom: solid 4px #ffffff
+                border-bottom: solid 3px #ffffff
                 left: -1px
-                top: 18px
+                top: 17px
               &:after
                 position: absolute
                 content: ""
                 width: 10px
                 height: 0
-                border-bottom: solid 4px #ffffff
+                border-bottom: solid 3px #ffffff
                 left: -1px
-                top: 23px
+                top: 22px
       .block__form
         margin-top: 50px
         +clr
@@ -180,46 +184,116 @@ header
           background-color: #fff
           display: inline-block
           border: none
-          margin-right: 25px
+          margin-right: 15px
           padding-left: 15px
           line-height: 19px
+          color: #333
+          font-size: 18px
+          margin-bottom: 10px
 
         .button--form
           vertical-align: top
-          padding: 10px 34px
-          font-size: 18px
+          padding: 5px 49px
+          font-size: 26px
+
+
+.intro
+  border-bottom-width: 8px
+  border-image-source: url(../img/stripe.png)
+  border-image-repeat: repeat
+  border-image-slice: 0 1 8 1
+  &__img
+    margin-top: -3px
+    img
+      width: 100%
+      max-width: 400px
+
+  &__text
+    padding-top: 50px
+    color: #333
+    h2
+      font-family: 'uni_sanssemibold'
+      font-size: 28px
+      font-weight: normal
+    p
+      font-family: 'uni_sans_regularregular'
+      font-size: 18px
+      margin-top: 10px
+      &.intro__specs
+        font-family: 'uni_sanssemibold'
+        i
+          display: inline-block
+          position: relative
+          content: ""
+          background: url(../img/intro_bang.png) no-repeat center
+          width: 27px
+          height: 27px
+          margin-right: 6px
+          vertical-align: middle
+
+
+
+
 .about
-  padding-top: 30px
+  padding-top: 90px
   padding-bottom: 60px
+  font-family: 'uni_sans_regularregular'
+  font-size: 18px
+  color: #333333
   .container
     .row
+      margin-bottom: 60px
       &:last-child
-        margin-top: 60px
-        img
-          margin-top: -30px
-    .title-wrapper
-      text-align: center
-      position: relative
-      background: url(../img/wave.png) center repeat-x
-      max-width: 660px
-      margin: 0 auto 80px
-      h2
-        display: inline-block
-        position: relative
-        background: #ffffff
-        padding: 0 40px
-        margin: 0
-    p
-      font-family: 'conv_calibril'
-      color: #3f3f3f
-      font-size: 16px
-      span
-        font-family: 'calibribold'
+        margin-bottom: 0
+  h2
+    letter-spacing: -1px
+    text-align: left
+    margin: 0 0 20px
+  ul
+    list-style: none
+    padding: 0
+    &.item1
 
+    &.item2
+
+    li
+      position: relative
+      margin-top: 30px
+      padding-left: 35px
+      &:before
+        position: absolute
+        content: ""
+        top: -3px
+        left: 0
+        width: 18px
+        height: 30px
+      &.red
+        &:before
+          background: url(../img/red-list.png) no-repeat
+      &.orange
+        &:before
+          background: url(../img/orange-list.png) no-repeat
+      &.violet
+        &:before
+          background: url(../img/violet-list.png) no-repeat
+      &.blue
+        &:before
+          background: url(../img/blue-list.png) no-repeat
+      &.green
+        &:before
+          background: url(../img/green-list.png) no-repeat
+  .about__img
+    text-align: center
     img
-      margin-top: -50px
       width: 100%
-      max-width: 285px
+      &.i1
+        max-width: 192px
+      &.i2
+        max-width: 325px
+      &.i3
+        max-width: 335px
+
+
 
 .testimony
   background: url(../img/testimony_bg.png) no-repeat center center
