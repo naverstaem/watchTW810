@@ -1,0 +1,84 @@
+//@import "../css/bootstrap.min.css"
+@import "../css/fonts/fonts.css"
+
+
+*
+  outline: none !important
+
+input.error, textarea.error
+  box-shadow: inset 0 0 10px red !important
+label.error
+  display: none !important
+
+input, textarea
+  +placeholder
+    font-size: 19px
+    text-transform: none
+    color: #999999
+    font-family: 'uni_sans_regularregular'
+
+.container
+  max-width: 965px
+
+.btn
+  +border-radius(25px)
+  +background-clip(padding-box)
+  background: #83b729
+  +box-shadow(0 4px 0 #537a10)
+  text-transform: uppercase
+  color: #ffffff
+  &:hover, &:focus
+    background: #8abd31
+    color: #ffffff
+  &:active
+    color: #ffffff
+    +box-shadow(0 0 0 0)
+
+
+.title
+  color: #3f3f3f
+  text-align: center
+  font-size: 49px
+  text-transform: none
+  font-family: 'pt_serifbold'
+
+.counter
+  display: inline-block
+  vertical-align: middle
+  margin-top: 10px
+  text-align: center
+
+  .bl
+    display: inline-block
+    text-align: center
+    margin: 0 6px
+    span
+      width: 63px
+      height: 63px
+      display: inline-block
+      font-family: 'uni_sanssemibold'
+      font-size: 27.5px
+      color: #313131
+      padding-top: 10px
+      background: url(../img/counter_bg.png) no-repeat
+      position: relative
+
+      &:after
+        position: absolute
+        content: ":"
+        font-size: 30px
+        color: #fff
+        top: 4px
+        font-family: 'uni_sanssemibold'
+        right: -10px
+      &.s
+        &:after
+          content: ""
+
+
+  p
+    font-family: 'uni_sanssemibold'
+    font-size: 12px
+    color: #ffffff
+    &.counter__title
+      font-size: 17px
