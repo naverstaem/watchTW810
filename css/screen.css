@@ -1977,7 +1977,8 @@ header .header__form .form__block .block__form .button--form { vertical-align: t
 .specs table tbody tr:nth-child(odd) { background: url(../img/table_bg.png) repeat; }
 .specs table tr td { border: none; }
 .specs table tr th { width: 35%; border: none; }
-.specs .specs__img { text-align: center; width: 100%; max-width: 350px; }
+.specs .specs__img { text-align: center; }
+.specs .specs__img img { width: 100%; max-width: 350px; }
 .specs ul { font-size: 18px; color: #333; font-family: "uni_sans_regularregular"; }
 .specs ul li { position: relative; }
 
