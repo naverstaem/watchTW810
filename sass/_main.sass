@@ -1,0 +1,792 @@
+.top
+
+
+.navbar
+  margin-bottom: 0
+
+.navbar-brand
+  text-transform: uppercase
+  color: #45278b !important
+  font-family: 'uni_sansheavy'
+  font-size: 33px
+  margin-top: 5px
+  span
+    color: #262626 
+.navbar-default
+  border: none
+  background: none
+  padding: 15px 0 25px
+  text-align: center
+  .icon-bar
+    background-color: #333 !important
+
+  .navbar-nav
+    margin-top: 10px
+
+    li
+      a
+        color: #333 // text color
+        font-family: 'uni_sans_regularregular'
+        font-size: 16px
+        position: relative
+        text-transform: uppercase
+        text-decoration: none
+        &:hover, &.active, &:focus
+          text-decoration: underline
+          color: #333
+
+
+  .navbar-right
+    margin-top: 15px
+    font-family: 'uni_sans_regularregular'
+    .right-nomenclature
+      color: #333
+      font-size: 14px
+      text-transform: uppercase
+      display: inline-block
+      position: relative
+      top: -4px
+      margin-right: 20px
+    .right-b
+      display: inline-block
+      text-align: right
+
+      h2
+        font-weight: normal
+        font-size: 29px
+        margin: 0
+
+      a
+        color: #333 // text color
+        font-size: 15px
+        line-height: 1
+        display: inline-block
+        border-bottom: 1px dotted #333
+        text-decoration: none
+        +border-radius(0)
+        padding: 0
+        &:hover
+          border-bottom: 1px dotted rgba(#fff, 0)
+
+
+
+
+header
+  border-top-width: 8px
+  border-image-source: url(../img/stripe.png)
+  border-image-repeat: repeat
+  border-image-slice: 8 1 0 1
+  padding-top: 60px
+  padding-bottom: 25px
+  background: url(../img/header_bg.jpg) center center no-repeat
+  +cover
+  overflow: hidden
+  .top-b
+    position: relative
+    z-index: 1
+    +box-shadow(#0f0f0f 0 20px 20px -20px)
+    padding-bottom: 50px
+    padding-left: 30px
+    h1
+      font-family: 'uni_sanssemibold'
+      font-size: 42px
+      color: #fff
+      margin-bottom: 0
+      letter-spacing: -1px
+    h2
+      font-family: 'uni_sans_regularregular'
+      color: #ffffff
+      font-size: 28px
+      margin-top: 30px
+    h3
+      font-family: 'uni_sans_regularregular'
+      color: #ffffff
+      font-size: 19px
+      margin-top: 15px
+
+  .header__watch
+    position: relative
+    z-index: 0
+    img
+      position: absolute
+      top: -190px
+      left: -350px
+
+
+  .header__form
+
+    .form__block
+      padding-right: 0
+      padding-top: 25px
+      +clr
+      .block__top
+        text-align: center
+        h2
+          font-family: 'uni_sanssemibold'
+          display: inline-block
+          vertical-align: middle
+          margin-top: 0
+          text-transform: uppercase
+          font-size: 24px
+          line-height: 1em
+          color: #84b829
+          padding-left: 25px
+
+          span
+            font-size: 21px
+            text-transform: none
+            color: #ffffff
+        .counter
+          padding-left: 25px
+        .block__price
+          color: #ffffff
+          font-family: 'uni_sansbold'
+          margin-top: 20px
+          display: block
+          .old
+            font-size: 23px
+            float: left
+
+          .new
+            font-size: 29.5px
+            float: right
+            span
+              text-transform: uppercase
+              position: relative
+              font-size: 29.5px
+              font-family: 'uni_sans_regularregular'
+              &:before
+                position: absolute
+                content: ""
+                width: 10px
+                height: 0
+                border-bottom: solid 3px #ffffff
+                left: -1px
+                top: 17px
+              &:after
+                position: absolute
+                content: ""
+                width: 10px
+                height: 0
+                border-bottom: solid 3px #ffffff
+                left: -1px
+                top: 22px
+      .block__form
+        margin-top: 50px
+        +clr
+        form
+          text-align: center
+
+        input
+          width: 333px
+          height: 53px
+          +border-radius(2px)
+          +background-clip(padding-box)
+          background-color: #fff
+          display: inline-block
+          border: none
+          margin-right: 15px
+          padding-left: 15px
+          line-height: 19px
+          color: #333
+          font-size: 18px
+          margin-bottom: 10px
+
+        .button--form
+          vertical-align: top
+          padding: 5px 49px
+          font-size: 26px
+
+
+.intro
+  border-bottom-width: 8px
+  border-image-source: url(../img/stripe.png)
+  border-image-repeat: repeat
+  border-image-slice: 0 1 8 1
+  &__img
+    margin-top: -3px
+    img
+      width: 100%
+      max-width: 400px
+
+  &__text
+    padding-top: 50px
+    color: #333
+    h2
+      font-family: 'uni_sanssemibold'
+      font-size: 28px
+      font-weight: normal
+    p
+      font-family: 'uni_sans_regularregular'
+      font-size: 18px
+      margin-top: 10px
+      &.intro__specs
+        font-family: 'uni_sanssemibold'
+        i
+          display: inline-block
+          position: relative
+          content: ""
+          background: url(../img/intro_bang.png) no-repeat center
+          width: 27px
+          height: 27px
+          margin-right: 6px
+          vertical-align: middle
+
+
+
+
+.about
+  padding-top: 90px
+  padding-bottom: 60px
+  font-family: 'uni_sans_regularregular'
+  font-size: 18px
+  color: #333333
+  .container
+    .row
+      margin-bottom: 60px
+      &:last-child
+        margin-bottom: 0
+  h2
+    letter-spacing: -1px
+    text-align: left
+    margin: 0 0 20px
+  ul
+    list-style: none
+    padding: 0
+
+    li
+      position: relative
+      margin-top: 30px
+      padding-left: 35px
+      &:before
+        position: absolute
+        content: ""
+        top: -3px
+        left: 0
+        width: 18px
+        height: 30px
+      &.red
+        &:before
+          background: url(../img/red-list.png) no-repeat
+      &.orange
+        &:before
+          background: url(../img/orange-list.png) no-repeat
+      &.violet
+        &:before
+          background: url(../img/violet-list.png) no-repeat
+      &.blue
+        &:before
+          background: url(../img/blue-list.png) no-repeat
+      &.green
+        &:before
+          background: url(../img/green-list.png) no-repeat
+  .about__img
+    text-align: center
+    img
+      width: 100%
+      &.i1
+        max-width: 192px
+      &.i2
+        max-width: 325px
+      &.i3
+        max-width: 335px
+
+.features
+  background: url(../img/features_bg.jpg)
+  +cover
+  padding: 70px 0
+  .item
+    text-align: center
+    color: #333
+    margin-top: 50px
+    .item__img
+      text-align: center
+      img
+        width: 167px
+        height: 118px
+    h3
+      font-size: 20px
+      font-family: 'uni_sanssemibold'
+    p
+      font-size: 16.4px
+      font-family: 'uni_sans_regularregular'
+
+.specs
+  padding: 80px 0
+  h2
+    text-align: left
+    margin-bottom: 30px
+
+  table
+    tbody
+      font-size: 14px
+      tr
+        &:nth-child(odd)
+          background: url(../img/table_bg.png) repeat
+    tr
+      td
+        border: none
+        &:nth-child(odd)
+          color: #8e8e8e
+      th
+        width: 35%
+        border: none
+  .specs__img
+    text-align: center
+    margin-bottom: 40px
+    img
+      width: 100%
+      max-width: 350px
+  ul
+    font-size: 18px
+    color: #333
+    padding: 0
+    list-style: none
+    font-family: 'uni_sans_regularregular'
+    li
+      position: relative
+      padding-left: 60px
+      margin-top: 30px
+      &:first-child
+        margin-top: 45px
+      &.first
+        &:before
+          background: #7d63a9 url(../img/specs_ico1.png) no-repeat 13px 8px
+
+      &.sixth
+        &:before
+          background: #7d63a9 url(../img/specs_ico6.png) no-repeat 8px 11px
+
+      &.second
+        &:before
+          background: #7d63a9 url(../img/specs_ico2.png) no-repeat 8px 13px
+
+      &.third
+        &:before
+          background: #7d63a9 url(../img/specs_ico3.png) no-repeat 13px 8px
+
+      &.fourth
+        &:before
+          background: #7d63a9 url(../img/specs_ico4.png) no-repeat 12px 12px
+
+      &.fifth
+        &:before
+          background: #7d63a9 url(../img/specs_ico5.png) no-repeat 9px 9px
+
+      &:before
+        content: ""
+        position: absolute
+        width: 43px
+        height: 43px
+        +border-radius(50%)
+        top: -7px
+        left: 0
+
+  p
+    font-family: 'uni_sans_regularregular'
+    font-size: 15px
+    &:first-of-type
+      margin-top: 50px
+
+
+
+.advice
+  text-align: center
+  border-bottom-width: 8px
+  border-top-width: 8px
+  border-image-source: url(../img/stripe.png)
+  border-image-repeat: repeat
+  border-image-slice: 8 1 8 1
+  padding-top: 75px
+  padding-bottom: 65px
+  &__text
+    text-align: left
+    h2
+      text-align: left
+      margin-top: 0
+    ul
+      list-style: none
+      font-family: 'uni_sans_regularregular'
+      font-size: 17px
+      color: #333
+      li
+        position: relative
+        margin-top: 25px
+        &:before
+          position: absolute
+          top: 10px
+          left: -40px
+          content: ""
+          width: 19px
+          height: 0
+          border-bottom: solid 2px #210043
+
+.works
+  text-align: center
+  padding-top: 70px
+  padding-bottom: 40px
+  &__item
+    margin-top: 40px
+    img
+      margin-bottom: 30px
+    p
+      font-family: 'uni_sans_regularregular'
+      font-size: 17px
+      color: #242424
+      padding: 0 10px
+
+
+.reviews
+  padding: 40px
+  &__item
+    margin-top: 45px
+    text-align: center
+    font-family: 'uni_sans_regularregular'
+    h3
+      font-size: 21px
+      color: #242424
+    h4
+      font-size: 16px
+      color: #999
+    p
+      margin-top: 15px
+      color: #414040
+      font-size: 18px
+      padding: 0 25px
+  &__buttons
+    text-align: center
+    padding-top: 70px
+  &__more
+    display: block
+    height: 49px
+    width: 100%
+    max-width: 176px
+    margin: 0 auto
+    font-size: 21px
+  &__add-review
+    display: inline-block
+    margin: 20px auto 0
+    font-family: 'uni_sans_regularregular'
+    font-size: 16px
+    color: #414141
+    border-bottom: dotted 1px
+    text-decoration: none
+    &:hover, &:active, &:focus
+      border-bottom: dotted 1px #ffffff
+      color: #414141
+      text-decoration: none
+
+.header--bottom
+  @extend header
+
+.other
+  padding-top: 70px
+  text-align: center
+  padding-bottom: 55px
+
+  .item
+    margin: 30px 0 0
+    padding: 30px
+    +border-radius(4px)
+    +background-clip(padding-box)
+    //border: 3px rgb(219,219,219) solid
+    text-align: center
+    background: url(../img/form_bg1.jpg) no-repeat
+    +cover
+    &.i2
+      background: url(../img/form_bg2.jpg) no-repeat
+      +cover
+    &.i3
+      background: url(../img/form_bg3.jpg) no-repeat
+      +cover
+
+
+
+    h3
+      font-size: 23px
+      font-family: 'uni_sans_regularregular'
+      color: #181818
+      margin: 0 0 10px
+
+    p
+      font-size: 29px
+      color: #181818
+      text-transform: uppercase
+
+
+  .img
+    display: inline-block
+    height: 223px
+    width: 223px
+    +border-radius(50%)
+    background: #ffffff
+    text-align: center
+    margin-bottom: 15px
+    span
+      vertical-align: middle
+      display: inline-block
+      height: 100%
+    img
+      vertical-align: middle
+      display: inline-block
+      border-radius: 50%
+  .price-b
+    font-family: 'uni_sansbold'
+    color: #181818
+    font-size: 26px
+    margin-bottom: 15px
+  
+
+  input
+    +placeholder
+      font-size: 16px
+    width: 100%
+    height: 35.5px
+    margin-bottom: 10px
+    padding-left: 15px
+    font-size: 16px
+    +background-clip(padding-box)
+    border: 1px solid rgba(204,204,204,.59)
+    @include border-radius(3px)
+    @include background-clip(padding-box)
+    background-color: #77b3ff
+    @include background-image(linear-gradient(to bottom, #fff 0%, #fff 1%, #fff 100%))
+
+    &:focus
+      @include box-shadow(0 0 9px rgba(204,62,82,.13)) // outer glow
+
+
+  button
+    width: 100%
+    font-family: 'uni_sanssemibold'
+    text-transform: uppercase
+    font-size: 21px
+    margin-top: 10px
+
+
+
+footer
+  border-top-width: 8px
+  border-image-source: url(../img/stripe.png)
+  border-image-repeat: repeat
+  border-image-slice: 8 1 0 1
+  padding-top: 35px
+  padding-bottom: 40px
+  font-family: 'uni_sans_regularregular'
+  color: #414141
+  span
+    display: inline-block
+    position: relative
+    margin-right: 10px
+  p
+    font-size: 16px
+    display: inline-block
+    vertical-align: middle
+    margin-bottom: 0
+    line-height: 1.7em
+  .footer__right
+    text-align: right
+    font-size: 15px
+    a
+      margin-left: 15px
+      color: #414141
+      text-decoration: underline
+      &:hover
+        text-decoration: none
+//  Modal styles
+
+
+.feedback
+  text-align: center
+  .modal-backdrop
+    background: #fff
+    &.in
+      +opacity(.71)
+  .modal-dialog
+    +border-radius(3px)
+    max-width: 574px
+    +background-clip(padding-box)
+    background-color: #fff
+    +box-shadow(0 8px 46px rgba(0,0,0,.44))
+
+  .modal-content
+    border-top-width: 8px
+    border-image-source: url(../img/stripe.png)
+    border-image-repeat: repeat
+    border-image-slice: 8 1 0 1
+    position: relative
+    +border-radius(3px)
+    .close
+      position: absolute
+      top: 7px
+      right: 10px
+
+  .modal-header
+    border-bottom: none
+    padding-top: 40px
+    h2
+      margin-top: 15px
+    h3
+      font-family: 'uni_sans_regularregular'
+      color: black
+      font-size: 17px
+      padding: 0 15px
+      line-height: 1.2em
+
+
+
+  .modal-body
+    padding: 10px 45px 60px
+    form
+      input[type = text]
+        +placeholder
+          font-size: 16px
+        height: 42.5px
+        display: block
+        +border-radius(2px)
+        +background-clip(padding-box)
+        background: #fbfbfb
+        +box-shadow(inset 0 1px 2px rgba(0,0,0,.36))
+        width: 100%
+        border: none
+        margin: 0 auto 10px
+        font-size: 16px
+        color: #333
+        max-width: 230px
+        font-family: 'uni_sans_regularregular'
+        padding-left: 10px
+        &:focus
+          +box-shadow(0 0 5px rgba(79,56,109,.27), inset 0 1px 2px rgba(0,0,0,.36))
+
+
+      button
+        width: 100%
+        font-size: 21px
+        max-width: 230px
+        font-family: 'uni_sanssemibold'
+        height: 46.4px
+        text-transform: uppercase
+        display: block
+        margin: 30px auto 0
+
+.add-review
+  @extend .feedback
+  .modal-dialog
+    max-width: 574px
+  .modal-content
+  .modal-header
+    padding-top: 30px
+  .modal-body
+    form
+      text-align: left
+
+      .form__inputs
+        text-align: center
+        width: 100%
+      input[type = text]
+        display: inline-block
+        margin-right: 9px
+        &:last-child
+          margin-right: 0
+
+      textarea
+        +placeholder
+          font-size: 16px
+        height: 106px
+        resize: none
+        width: 100%
+        max-width: 477px
+        padding: 15px 10px
+        margin-top: 5px
+        +border-radius(2px)
+        +background-clip(padding-box)
+        background-color: #fbfbfb
+        +box-shadow(inset 0 1px 2px rgba(0,0,0,.36))
+        border: none
+      .form__bottom
+        +clr
+
+        .checkbox
+          display: inline-block
+          text-align: left
+          font-size: 16px
+          font-family: 'uni_sans_regularregular'
+          >input
+            display: none
+            &:checked
+              &+label
+                .checkbox__box
+                  &:before
+                    position: absolute
+                    content: ""
+                    width: 10px
+                    height: 10px
+                    +border-radius(1px)
+                    +background-clip(padding-box)
+                    background-color: #4f376d
+                    top: 50%
+                    left: 50%
+                    +transform(translate(-50%,-50%))
+
+
+
+          label
+            +clr
+            padding: 0
+            margin-top: 20px
+
+            .checkbox__box
+              position: relative
+              top: 2px
+              text-align: center
+              margin-right: 10px
+              width: 18px
+              height: 18px
+              +border-radius(2px)
+              +background-clip(padding-box)
+              background: #fbfbfb
+              +box-shadow(inset 0 1px 2px rgba(0,0,0,.36))
+              display: inline-block
+            .checkbox__text
+              display: inline-block
+              vertical-align: top
+        button
+          display: inline-block
+          max-width: 185px
+          float: right
+          &:disabled
+            background: #ccc
+            +box-shadow(0 4px 0 #aaa)
+            cursor: auto
+
+
+
+
+
+
+.thanks
+  @extend .feedback
+  .modal-dialog
+    max-width: 447px
+    +border-radius(0 0 265px 265px / 0 0 25px 25px)
+  .modal-content
+    border-top-width: 8px
+    border-image-source: url(../img/stripe.png)
+    border-image-repeat: repeat
+    border-image-slice: 8 1 0 1
+    position: relative
+    +border-radius(0 0 265px 265px / 0 0 25px 25px)
+  .modal-header
+    h2
+      font-size: 45px
+    h3
+      font-size: 18px
+      padding: 0
+
+
+
+//media queries
+
+@media(max-width: 767px)
+  h1, h2
+    font-size: 24px !important
