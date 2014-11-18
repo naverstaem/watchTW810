@@ -1973,14 +1973,33 @@ header .header__form .form__block .block__form .button--form { vertical-align: t
 .features .item p { font-size: 16.4px; font-family: "uni_sans_regularregular"; }
 
 .specs { padding: 80px 0; }
-.specs h2 { text-align: left; }
+.specs h2 { text-align: left; margin-bottom: 30px; }
+.specs table tbody { font-size: 14px; }
 .specs table tbody tr:nth-child(odd) { background: url(../img/table_bg.png) repeat; }
 .specs table tr td { border: none; }
+.specs table tr td:nth-child(odd) { color: #8e8e8e; }
 .specs table tr th { width: 35%; border: none; }
-.specs .specs__img { text-align: center; }
+.specs .specs__img { text-align: center; margin-bottom: 40px; }
 .specs .specs__img img { width: 100%; max-width: 350px; }
-.specs ul { font-size: 18px; color: #333; font-family: "uni_sans_regularregular"; }
-.specs ul li { position: relative; }
+.specs ul { font-size: 18px; color: #333; padding: 0; list-style: none; font-family: "uni_sans_regularregular"; }
+.specs ul li { position: relative; padding-left: 60px; margin-top: 30px; }
+.specs ul li:first-child { margin-top: 45px; }
+.specs ul li.first:before { background: #7d63a9 url(../img/specs_ico1.png) no-repeat 13px 8px; }
+.specs ul li.sixth:before { background: #7d63a9 url(../img/specs_ico6.png) no-repeat 8px 11px; }
+.specs ul li.second:before { background: #7d63a9 url(../img/specs_ico2.png) no-repeat 8px 13px; }
+.specs ul li.third:before { background: #7d63a9 url(../img/specs_ico3.png) no-repeat 13px 8px; }
+.specs ul li.fourth:before { background: #7d63a9 url(../img/specs_ico4.png) no-repeat 12px 12px; }
+.specs ul li.fifth:before { background: #7d63a9 url(../img/specs_ico5.png) no-repeat 9px 9px; }
+.specs ul li:before { content: ""; position: absolute; width: 43px; height: 43px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; top: -7px; left: 0; }
+.specs p { font-family: "uni_sans_regularregular"; font-size: 15px; }
+.specs p:first-of-type { margin-top: 50px; }
+
+.advice { text-align: center; border-bottom-width: 8px; border-top-width: 8px; border-image-source: url(../img/stripe.png); border-image-repeat: repeat; border-image-slice: 8 1 8 1; padding-top: 75px; padding-bottom: 65px; }
+.advice__text { text-align: left; }
+.advice__text h2 { text-align: left; margin-top: 0; }
+.advice__text ul { list-style: none; font-family: "uni_sans_regularregular"; font-size: 17px; color: #333; }
+.advice__text ul li { position: relative; margin-top: 25px; }
+.advice__text ul li:before { position: absolute; top: 10px; left: -40px; content: ""; width: 19px; height: 0; border-bottom: solid 2px #210043; }
 
 .testimony { background: url(../img/testimony_bg.png) no-repeat center center; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; padding-top: 70px; padding-bottom: 80px; text-align: center; position: relative; }
 .testimony h2 { color: #ffffff; font-size: 48px; margin: 0; letter-spacing: -1px; }
