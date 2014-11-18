@@ -2001,6 +2001,11 @@ header .header__form .form__block .block__form .button--form { vertical-align: t
 .advice__text ul li { position: relative; margin-top: 25px; }
 .advice__text ul li:before { position: absolute; top: 10px; left: -40px; content: ""; width: 19px; height: 0; border-bottom: solid 2px #210043; }
 
+.works { text-align: center; padding-top: 70px; padding-bottom: 30px; }
+.works__item { margin-top: 40px; }
+.works__item img { margin-bottom: 30px; }
+.works__item p { font-family: "uni_sans_regularregular"; font-size: 17px; color: #242424; padding: 0 10px; }
+
 .testimony { background: url(../img/testimony_bg.png) no-repeat center center; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; padding-top: 70px; padding-bottom: 80px; text-align: center; position: relative; }
 .testimony h2 { color: #ffffff; font-size: 48px; margin: 0; letter-spacing: -1px; }
 .testimony .wave { display: inline-block; width: 140px; background: url(../img/wave2.png) center repeat-x; margin: 25px auto 0; height: 17px; }
