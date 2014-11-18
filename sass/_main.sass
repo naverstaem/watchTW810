@@ -1,8 +1,5 @@
 .top
-  border-bottom-width: 8px
-  border-image-source: url(../img/stripe.png)
-  border-image-repeat: repeat
-  border-image-slice: 0 1 8 1
+
 
 .navbar
   margin-bottom: 0
@@ -18,7 +15,7 @@
 .navbar-default
   border: none
   background: none
-  padding: 12px 0 20px
+  padding: 15px 0 25px
   text-align: center
   .icon-bar
     background-color: #333 !important
@@ -75,6 +72,10 @@
 
 
 header
+  border-top-width: 8px
+  border-image-source: url(../img/stripe.png)
+  border-image-repeat: repeat
+  border-image-slice: 8 1 0 1
   padding-top: 60px
   padding-bottom: 25px
   background: url(../img/header_bg.jpg) center center no-repeat
@@ -423,7 +424,7 @@ header
 .works
   text-align: center
   padding-top: 70px
-  padding-bottom: 30px
+  padding-bottom: 40px
   &__item
     margin-top: 40px
     img
@@ -475,7 +476,8 @@ header
       color: #414141
       text-decoration: none
 
-
+.header--bottom
+  @extend header
 
 
 
