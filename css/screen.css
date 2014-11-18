@@ -1883,6 +1883,10 @@ input::placeholder, textarea::placeholder { font-size: 19px; text-transform: non
 .btn:hover, .btn:focus { background: #8abd31; color: #ffffff; }
 .btn:active { color: #ffffff; -webkit-box-shadow: 0 0 0 0; box-shadow: 0 0 0 0; }
 
+.btn--dark { background-color: #4f376d; -webkit-box-shadow: 0 4px 0 #321855; box-shadow: 0 4px 0 #321855; text-transform: none; }
+.btn--dark:hover, .btn--dark:focus { background: #584176; }
+.btn--dark:active { -webkit-box-shadow: 0 0 0 0; box-shadow: 0 0 0 0; }
+
 .title { color: #333333; text-align: center; font-size: 42px; text-transform: uppercase; font-family: "uni_sansbook"; }
 .title span { font-family: "uni_sansbold"; }
 
@@ -2006,26 +2010,15 @@ header .header__form .form__block .block__form .button--form { vertical-align: t
 .works__item img { margin-bottom: 30px; }
 .works__item p { font-family: "uni_sans_regularregular"; font-size: 17px; color: #242424; padding: 0 10px; }
 
-.testimony { background: url(../img/testimony_bg.png) no-repeat center center; -moz-background-size: cover; -o-background-size: cover; -webkit-background-size: cover; background-size: cover; padding-top: 70px; padding-bottom: 80px; text-align: center; position: relative; }
-.testimony h2 { color: #ffffff; font-size: 48px; margin: 0; letter-spacing: -1px; }
-.testimony .wave { display: inline-block; width: 140px; background: url(../img/wave2.png) center repeat-x; margin: 25px auto 0; height: 17px; }
-.testimony-item { display: inline-block; text-align: center; }
-.testimony-item p { font-family: "conv_calibril"; font-size: 16px; color: #ffffff; }
-.testimony-img { width: 151px; height: 151px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; background: rgba(255, 255, 255, 0.1); position: relative; display: inline-block; margin-bottom: 20px; }
-.testimony-img .img-in { position: absolute; content: ""; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); width: 114px; height: 114px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; -moz-background-clip: padding; -o-background-clip: padding-box; -webkit-background-clip: padding; background-clip: padding-box; background: rgba(255, 255, 255, 0.13); -webkit-box-shadow: inset 0 0 36px rgba(255, 255, 255, 0.07); box-shadow: inset 0 0 36px rgba(255, 255, 255, 0.07); }
-.testimony-img .img-in:after { position: absolute; top: 50%; left: 50%; -moz-transform: translate(-50%, -50%); -ms-transform: translate(-50%, -50%); -webkit-transform: translate(-50%, -50%); transform: translate(-50%, -50%); content: ""; }
-.testimony-img .img-in.img1:after { background: url(../img/t-img1.png) no-repeat; width: 37px; height: 55px; }
-.testimony-img .img-in.img2:after { background: url(../img/t-img2.png) no-repeat; width: 49px; height: 64px; }
-.testimony-img .img-in.img3:after { background: url(../img/t-img3.png) no-repeat; width: 47px; height: 43px; }
-.testimony-img .img-in.img4:after { background: url(../img/t-img4.png) no-repeat; width: 53px; height: 53px; }
-.testimony .shadow { margin-top: 55px; background: url(../img/shadow_big.png) no-repeat; background-repeat: no-repeat; background-size: cover; background-position: 50% 50%; width: 100%; height: 17px; }
-.testimony .using { color: #ffffff; text-align: left; padding-top: 60px; }
-.testimony .using h3 { font-family: "pt_serifbold"; font-size: 30px; margin-top: 0; }
-.testimony .using ul { padding-left: 20px; list-style: none; }
-.testimony .using ul li { position: relative; margin-top: 25px; }
-.testimony .using ul li:before { position: absolute; content: ""; width: 6px; height: 6px; -moz-border-radius: 50%; -webkit-border-radius: 50%; border-radius: 50%; top: 5px; left: -20px; background: #ffb3c5; }
-.testimony .using p { font-family: "conv_calibril"; color: #ffffff; font-size: 16px; }
-.testimony .using p span { font-family: "calibribold"; }
+.reviews { padding: 40px; }
+.reviews__item { margin-top: 45px; text-align: center; font-family: "uni_sans_regularregular"; }
+.reviews__item h3 { font-size: 21px; color: #242424; }
+.reviews__item h4 { font-size: 16px; color: #999; }
+.reviews__item p { margin-top: 15px; color: #414040; font-size: 18px; padding: 0 25px; }
+.reviews__buttons { text-align: center; padding-top: 70px; }
+.reviews__more { display: block; height: 49px; width: 100%; max-width: 176px; margin: 0 auto; font-size: 21px; }
+.reviews__add-review { display: inline-block; margin: 20px auto 0; font-family: "uni_sans_regularregular"; font-size: 16px; color: #414141; border-bottom: dotted 1px; text-decoration: none; }
+.reviews__add-review:hover, .reviews__add-review:active, .reviews__add-review:focus { border-bottom: dotted 1px #ffffff; color: #414141; text-decoration: none; }
 
 .other { padding-top: 20px; text-align: center; padding-bottom: 55px; }
 .other h2 { margin-bottom: 30px; }

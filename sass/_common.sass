@@ -33,7 +33,14 @@ input, textarea
   &:active
     color: #ffffff
     +box-shadow(0 0 0 0)
-
+.btn--dark
+  background-color: #4f376d
+  +box-shadow(0 4px 0 #321855)
+  text-transform: none
+  &:hover, &:focus
+    background: #584176
+  &:active
+    +box-shadow(0 0 0 0)
 
 .title
   color: #333333

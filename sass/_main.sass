@@ -435,133 +435,64 @@ header
       padding: 0 10px
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.testimony
-  background: url(../img/testimony_bg.png) no-repeat center center
-  +background-size(cover)
-  padding-top: 70px
-  padding-bottom: 80px
-  text-align: center
-  position: relative
-  .container
-  h2
-    color: #ffffff
-    font-size: 48px
-    margin: 0
-    letter-spacing: -1px
-  .wave
-    display: inline-block
-    width: 140px
-    background: url(../img/wave2.png) center repeat-x
-    margin: 25px auto 0
-    height: 17px
-  &-item
-    display: inline-block
+.reviews
+  padding: 40px
+  &__item
+    margin-top: 45px
     text-align: center
-    p
-      font-family: 'conv_calibril'
-      font-size: 16px
-      color: #ffffff
-  &-img
-    width: 151px
-    height: 151px
-    @include border-radius(50%)
-    @include background-clip(padding-box)
-    background: rgba(#fff,.1)
-    position: relative
-    display: inline-block
-    margin-bottom: 20px
-    .img-in
-      position: absolute
-      content: ""
-      top: 50%
-      left: 50%
-      +transform(translate(-50%,-50%))
-      width: 114px
-      height: 114px
-      @include border-radius(50%)
-      @include background-clip(padding-box)
-      background: rgba(255,255,255,.13)
-      @include box-shadow(inset 0 0 36px rgba(255,255,255,.07))
-      &:after
-        position: absolute
-        top: 50%
-        left: 50%
-        +transform(translate(-50%,-50%))
-        content: ""
-      &.img1
-        &:after
-          background: url(../img/t-img1.png) no-repeat
-          width: 37px
-          height: 55px
-      &.img2
-        &:after
-          background: url(../img/t-img2.png) no-repeat
-          width: 49px
-          height: 64px
-      &.img3
-        &:after
-          background: url(../img/t-img3.png) no-repeat
-          width: 47px
-          height: 43px
-      &.img4
-        &:after
-          background: url(../img/t-img4.png) no-repeat
-          width: 53px
-          height: 53px
-  .shadow
-    margin-top: 55px
-    background: url(../img/shadow_big.png) no-repeat
-    +cover
-    width: 100%
-    height: 17px
-  .using
-    color: #ffffff
-    text-align: left
-    padding-top: 60px
+    font-family: 'uni_sans_regularregular'
     h3
-      font-family: 'pt_serifbold'
-      font-size: 30px
-      margin-top: 0
-    ul
-      padding-left: 20px
-      list-style: none
-      li
-        position: relative
-        margin-top: 25px
-        &:before
-          position: absolute
-          content: ""
-          width: 6px
-          height: 6px
-          +border-radius(50%)
-          top: 5px
-          left: -20px
-          background: rgb(255,179,197)
-    p
-      font-family: 'conv_calibril'
-      color: #ffffff
+      font-size: 21px
+      color: #242424
+    h4
       font-size: 16px
-      span
-        font-family: 'calibribold'
+      color: #999
+    p
+      margin-top: 15px
+      color: #414040
+      font-size: 18px
+      padding: 0 25px
+  &__buttons
+    text-align: center
+    padding-top: 70px
+  &__more
+    display: block
+    height: 49px
+    width: 100%
+    max-width: 176px
+    margin: 0 auto
+    font-size: 21px
+  &__add-review
+    display: inline-block
+    margin: 20px auto 0
+    font-family: 'uni_sans_regularregular'
+    font-size: 16px
+    color: #414141
+    border-bottom: dotted 1px
+    text-decoration: none
+    &:hover, &:active, &:focus
+      border-bottom: dotted 1px #ffffff
+      color: #414141
+      text-decoration: none
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
