@@ -8,6 +8,22 @@ head.ready(function() {
 	//	$('.slider img').attr('src', srcLink);
 	//});
 
+	var checker = document.getElementById('check');
+	var sendbtn = document.getElementById('send');
+	sendbtn.disabled = true;
+	jQuery(document).ready(function($){
+		checker.onchange = function(){
+			if(this.checked){
+				sendbtn.disabled = false;
+			} else {
+				sendbtn.disabled = true;
+			}
+
+		};
+	});
+
+
+
 	// Counter
 
 	var d = [1, 7, 6, 5, 4, 3, 2];
@@ -44,6 +60,7 @@ head.ready(function() {
 	$('#form4').validate();
 	$('#form5').validate();
 	$('#form6').validate();
+	$('#form7').validate();
 
 
 	$('.navbar-nav a').on('click',function (e) {

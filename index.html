@@ -31,10 +31,10 @@
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="#">О товаре</a></li>
-                            <li><a href="#">Гарантии</a></li>
-                            <li><a href="#">Оплата и доставка</a></li>
-                            <li><a class="last" href="#">Отзывы</a></li>
+                            <li><a href="#about">О товаре</a></li>
+                            <li><a href="#specs">Гарантии</a></li>
+                            <li><a href="#works">Оплата и доставка</a></li>
+                            <li><a class="last" href="#reviews">Отзывы</a></li>
                         </ul>
 
                         <div class="navbar-right">
@@ -140,7 +140,7 @@
 
 </header>
 
-<div class="intro">
+<section class="intro">
     <div class="container">
         <div class="row">
             <div class="col-md-11">
@@ -157,7 +157,7 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 
 
 <section class="about" id="about">
@@ -293,7 +293,7 @@
 </section>
 
 
-<div class="specs">
+<section class="specs" id="specs">
     <div class="container">
         <div class="row">
             <div class="col-md-17"><h2 class="title">технические характеристики
@@ -428,11 +428,11 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 
 
 
-<div class="advice">
+<section class="advice">
     <div class="container">
       <div class="row">
           <div class="col-md-7"><img src="img/advice_img.jpg" alt="advice"/></div>
@@ -450,10 +450,10 @@
           </div>
       </div>
     </div>
-</div>
+</section>
 
 
-<div class="works">
+<section class="works" id="works">
     <div class="container">
         <div class="h2 title">как мы работаем</div>
         <div class="row">
@@ -503,10 +503,10 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 
 
-<div class="reviews">
+<section class="reviews" id="reviews">
     <div class="container">
         <h2 class="title">отзывы покупателей</h2>
         <div class="row">
@@ -536,9 +536,9 @@
             </div>
         </div>
     </div>
-</div>
+</section>
 
-<div class="header--bottom">
+<section class="header--bottom">
     <div class="container">
 
 
@@ -619,7 +619,7 @@
         </div>
     </div>
 
-</div>
+</section>
 
 
 
@@ -718,8 +718,8 @@
             </div>
             <div class="col-md-12">
                 <div class="footer__right">
-                    <a href="#">Политика конфиденциальности</a>
-                    <a href="#">Партнерская программа</a>
+                    <a href="#" data-toggle="modal" data-target="#thanks">Политика конфиденциальности</a>
+                    <a href="#" data-toggle="modal" data-target="#thanks">Партнерская программа</a>
                 </div>
 
             </div>
@@ -734,20 +734,18 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true"><img src="img/close.png" alt=""/></span><span class="sr-only">Close</span>
+                    <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
                 </button>
-                <h4 class="modal-title title">Обратный звонок</h4>
-
+                <h2 class="modal-title title">Обратный звонок</h2>
+                <h3>Введите контактные данные и наш менеджер свяжется
+                    с вами в ближайшее время</h3>
             </div>
             <div class="modal-body">
                 <form id="form6" action="#" method="post">
                     <input type="text" name="name" placeholder="Ваше имя" required/>
                     <input type="text" name="phone" placeholder="Ваш телефон" required/>
 
-                    <div class="button-wrapper">
-                        <button>Отправить</button>
-                        <div class="button-shadow"></div>
-                    </div>
+                        <button class="btn btn--dark">Отправить</button>
                 </form>
             </div>
         </div>
@@ -760,24 +758,59 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal">
-                    <span aria-hidden="true"><img src="img/close.png" alt=""/></span><span class="sr-only">Close</span>
+                    <span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
                 </button>
 
-                <div class="image"></div>
                 <div class="modal-body">
-                    <h3 class="modal-title">Спасибо!<br>
-                        <span>Ваша заявка успешно принята</span>
-                    </h3>
+                    <h2 class="modal-title title">Спасибо!</h2>
 
 
-                    <p>Через некоторое время с вами свяжется
-                        наш менеджер</p>
+                    <h3>Мы получили Вашу заявку и совсем скоро
+                        Вам перезвоним!</h3>
                 </div>
 
             </div>
         </div>
     </div>
 </div>
+
+<!-- add review form -->
+<div class="modal fade add-review" id="add-review" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+
+                <h2 class="modal-title title">Написать отзыв!</h2>
+                <h3>Введите контактные данные и наш менеджер свяжется
+                    с вами в ближайшее время</h3>
+            </div>
+            <div class="modal-body">
+                <form id="form7" action="#" method="post">
+                    <span class="form__inputs">
+                        <input type="text" name="name" placeholder="Введите имя" required/>
+                        <input type="text" name="phone" placeholder="Введите телефон" required/>
+                    </span>
+
+
+                    <textarea name="message" placeholder="Текст" required></textarea>
+
+                    <div class="form__bottom">
+                        <div class="checkbox">
+                            <input type="checkbox" name="" id="check"/>
+                            <label for="check"><span class="checkbox__box"></span>
+                                <span class="checkbox__text">Я  ознакомлен (а) с условиями <br/>
+                                    отправки сообщений</span>
+                            </label>
+                        </div>
+                        <button class="btn btn--dark" id="send">Отправить</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="js/lib/head.js" data-headjs-load="js/init.js"></script>

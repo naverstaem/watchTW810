@@ -598,7 +598,10 @@ footer
 
 .feedback
   text-align: center
-
+  .modal-backdrop
+    background: #fff
+    &.in
+      +opacity(.71)
   .modal-dialog
     +border-radius(3px)
     max-width: 574px
@@ -615,122 +618,175 @@ footer
     +border-radius(3px)
     .close
       position: absolute
-      top: 2px
-      right: -28px
-      +opacity(.8)
-      &:hover
-        +opacity(1)
+      top: 7px
+      right: 10px
 
   .modal-header
+    border-bottom: none
+    padding-top: 40px
+    h2
+      margin-top: 15px
+    h3
+      font-family: 'uni_sans_regularregular'
+      color: black
+      font-size: 17px
+      padding: 0 15px
+      line-height: 1.2em
 
-
-    h4
 
 
   .modal-body
-    padding: 30px 25px
-
-  form
-    input[type=text]
-      height: 52px
-      @include border-radius(6px)
-      background-color: #fff
-      border: 1px solid #ddd
-      margin-bottom: 12px
-      padding-left: 10px
-      font-size: 15px
-      +background-clip(padding-box)
-      +background-image(linear-gradient(to bottom, rgba(0,0,0,.12) 0%, rgba(255,255,255,.12) 50%, rgba(255,255,255,.08)))
-      width: 100%
-
-
-    .button-wrapper
-      position: relative
-      button
-        position: relative
-        margin-top: 20px
+    padding: 10px 45px 60px
+    form
+      input[type = text]
+        +placeholder
+          font-size: 16px
+        height: 42.5px
+        display: block
+        +border-radius(2px)
+        +background-clip(padding-box)
+        background: #fbfbfb
+        +box-shadow(inset 0 1px 2px rgba(0,0,0,.36))
         width: 100%
-        height: 65px
-        color: #8c5b66
-        font-family: "pt_serifbold"
-        font-size: 29px
         border: none
-        @include text-shadow(0 1px 0 rgba(255,255,255,.24))
-        @include border-radius(6px)
-        @include background-clip(padding-box)
-        background-color: #f09eb1
-        @include box-shadow(0 2px 0 #bb7686, inset 0 -1px 0 rgba(255,255,255,.1))
-        @include background-image(linear-gradient(to bottom, rgba(255,255,255,.3) 23.08%, rgba(0,0,0,.3) 123.08%))
-        z-index: 1
-        &:hover
-          background: lighten(#f09eb1, 10%)
-      .button-shadow
-        +box-shadow(black 0px -1px 8px 2px)
-        margin: 0 auto
-        width: 85%
+        margin: 0 auto 10px
+        font-size: 16px
+        color: #333
+        max-width: 230px
+        font-family: 'uni_sans_regularregular'
+        padding-left: 10px
+        &:focus
+          +box-shadow(0 0 5px rgba(79,56,109,.27), inset 0 1px 2px rgba(0,0,0,.36))
+
+
+      button
+        width: 100%
+        font-size: 21px
+        max-width: 230px
+        font-family: 'uni_sanssemibold'
+        height: 46.4px
+        text-transform: uppercase
+        display: block
+        margin: 30px auto 0
+
+.add-review
+  @extend .feedback
+  .modal-dialog
+    max-width: 574px
+  .modal-content
+  .modal-header
+    padding-top: 30px
+  .modal-body
+    form
+      text-align: left
+
+      .form__inputs
+        text-align: center
+        width: 100%
+      input[type = text]
+        display: inline-block
+        margin-right: 9px
+        &:last-child
+          margin-right: 0
+
+      textarea
+        +placeholder
+          font-size: 16px
+        height: 106px
+        resize: none
+        width: 100%
+        max-width: 477px
+        padding: 15px 10px
+        margin-top: 5px
+        +border-radius(2px)
+        +background-clip(padding-box)
+        background-color: #fbfbfb
+        +box-shadow(inset 0 1px 2px rgba(0,0,0,.36))
+        border: none
+      .form__bottom
+        +clr
+
+        .checkbox
+          display: inline-block
+          text-align: left
+          font-size: 16px
+          font-family: 'uni_sans_regularregular'
+          >input
+            display: none
+            &:checked
+              &+label
+                .checkbox__box
+                  &:before
+                    position: absolute
+                    content: ""
+                    width: 10px
+                    height: 10px
+                    +border-radius(1px)
+                    +background-clip(padding-box)
+                    background-color: #4f376d
+                    top: 50%
+                    left: 50%
+                    +transform(translate(-50%,-50%))
+
+
+
+          label
+            +clr
+            padding: 0
+            margin-top: 20px
+
+            .checkbox__box
+              position: relative
+              top: 2px
+              text-align: center
+              margin-right: 10px
+              width: 18px
+              height: 18px
+              +border-radius(2px)
+              +background-clip(padding-box)
+              background: #fbfbfb
+              +box-shadow(inset 0 1px 2px rgba(0,0,0,.36))
+              display: inline-block
+            .checkbox__text
+              display: inline-block
+              vertical-align: top
+        button
+          display: inline-block
+          max-width: 185px
+          float: right
+          &:disabled
+            background: #ccc
+            +box-shadow(0 4px 0 #aaa)
+            cursor: auto
+
+
+
+
+
 
 .thanks
-  text-align: center
-
+  @extend .feedback
   .modal-dialog
-    max-width: 445px
-    margin-top: 60px
+    max-width: 447px
+    +border-radius(0 0 265px 265px / 0 0 25px 25px)
   .modal-content
-    +border-radius(6px)
+    border-top-width: 8px
+    border-image-source: url(../img/stripe.png)
+    border-image-repeat: repeat
+    border-image-slice: 8 1 0 1
     position: relative
-    border: none
-    .close
-      position: absolute
-      top: 2px
-      right: -28px
-      +opacity(.8)
-      &:hover
-        +opacity(1)
-
+    +border-radius(0 0 265px 265px / 0 0 25px 25px)
   .modal-header
-    border: none
-    +border-radius(6px)
-    text-align: center
-    .image
-      display: inline-block
-      width: 90px
-      height: 90px
-      +border-radius(50%)
-      background: #9997c5
-      position: relative
-      top: -60px
-      &:after
-        position: absolute
-        content: ""
-        top: 50%
-        left: 50%
-        +transform(translate(-50%,-50%))
-        background: url(../img/ok.png) no-repeat
-        width: 39px
-        height: 30px
-  .modal-body
-    padding: 5px
-    margin-top: -40px
+    h2
+      font-size: 45px
     h3
-      font-size: 40px
-      color: #3f3f3f
-      font-weight: normal
-      font-family: 'pt_serifbold'
-      line-height: .8em
-      span
-        font-size: 26px
-
-    p
-      font-family: 'conv_calibril'
       font-size: 18px
-      color: #6a6a6a
-      padding: 0 35px
-      margin-top: 15px
+      padding: 0
 
 
+
+//media queries
 
 @media(max-width: 767px)
-  .navbar-nav
-    margin: 0
   h1, h2
     font-size: 24px !important
