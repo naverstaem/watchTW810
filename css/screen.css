@@ -1893,7 +1893,7 @@ input::placeholder, textarea::placeholder { font-size: 19px; text-transform: non
 .counter { display: inline-block; vertical-align: middle; margin-top: 10px; text-align: center; }
 .counter .bl { display: inline-block; text-align: center; margin: 0 6px; }
 .counter .bl span { width: 63px; height: 63px; display: inline-block; font-family: "uni_sanssemibold"; font-size: 27.5px; color: #313131; padding-top: 10px; background: url(../img/counter_bg.png) no-repeat; position: relative; }
-.counter .bl span:after { position: absolute; content: ":"; font-size: 30px; color: #fff; top: 4px; font-family: "uni_sanssemibold"; right: -10px; }
+.counter .bl span:after { position: absolute; content: ":"; font-size: 30px; color: #fff; top: 4px; font-family: "uni_sanssemibold"; right: -12px; }
 .counter .bl span.s:after { content: ""; }
 .counter p { font-family: "uni_sanssemibold"; font-size: 12px; color: #ffffff; }
 .counter p.counter__title { font-size: 17px; }
